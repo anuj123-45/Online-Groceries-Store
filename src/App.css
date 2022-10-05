@@ -1,0 +1,15 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+.col-card {
+  
+    transition: transform .2s;
+  }
+  
+  .col-card:hover {
+    transform: scale(1.1); 
+ 
+  }

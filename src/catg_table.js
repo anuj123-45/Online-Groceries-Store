@@ -91,7 +91,6 @@ const Tab=()=>{
    <ul  style={{listStyle:'none'}}>
     <li><a href="#hair" className="text-decoration-none">Hair Care</a></li>
     <li ><a href="#oral" className="text-decoration-none ">Oral Care</a></li>
-    <li ><a href="#skin" className="text-decoration-none ">Skin Care</a></li>
 
    </ul>
 </div></Col>

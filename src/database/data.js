@@ -184,7 +184,387 @@ const vegetable=[
 
 
 
+
+
 ];
+
+
+const soft_drinks=[
+
+  {
+    "id":17,
+    "title": "Coca Cola",
+    "description":"Coca Cola 1.75 L",
+    "price":58,
+    "image":"https://www.jiomart.com/images/product/600x600/491121060/coca-cola-1-75-l-product-images-o491121060-p491121060-0-202206022121.jpg",
+    "MRP":"Rs 90",
+    "RP":"MRP",
+    "discount":"35 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":18,
+    "title": "Sprite",
+    "description":"Sprite 600 ml",
+    "price":30,
+    "image":"https://www.jiomart.com/images/product/600x600/490001800/sprite-600-ml-product-images-o490001800-p490001800-0-202203170616.jpg",
+    "MRP":"Rs 38",
+    "RP":"MRP",
+    "discount":"21 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":19,
+    "title": "Marinda",
+    "description":"Mirinda Orange 750 ml",
+    "price":37,
+    "image":"https://www.jiomart.com/images/product/600x600/491208776/mirinda-orange-750-ml-product-images-o491208776-p491208776-0-202203150750.jpg",
+    "MRP":"Rs 40",
+    "RP":"MRP",
+    "discount":"3 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":20,
+    "title": "Sprite",
+    "description":"Sprite 300 ml",
+    "price":40,
+    "image":"https://www.jiomart.com/images/product/600x600/490809343/sprite-300-ml-can-product-images-o490809343-p490809343-0-202203151402.jpg",
+    "MRP":"Rs 46",
+    "RP":"MRP",
+    "discount":"13 %",
+    "offer":"off",
+
+  },
+
+];
+
+const tea=[
+
+
+  {
+    "id":21,
+    "title": "Brooke Bond",
+    "description":"Brooke Bond Red Label Strong Blend Tea 1 kg",
+    "price":420,
+    "image":"https://www.jiomart.com/images/product/600x600/490001992/brooke-bond-red-label-strong-blend-tea-1-kg-product-images-o490001992-p490001992-0-202208101817.jpg",
+    "MRP":"Rs 570",
+    "RP":"MRP",
+    "discount":"26 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":22,
+    "title": "Red Label",
+    "description":"Brooke Bond Red Label Natural Care Tea 500 g",
+    "price":269,
+    "image":"https://www.jiomart.com/images/product/600x600/490967439/brooke-bond-red-label-natural-care-tea-500-g-product-images-o490967439-p490967439-0-202208121842.jpg",
+    "MRP":"Rs 330",
+    "RP":"MRP",
+    "discount":"18 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":23,
+    "title": "Lipton Green Tea",
+    "description":"Lipton Honey Lemon Green Tea Bags 1.4 g (25 pcs)",
+    "price":140,
+    "image":"https://www.jiomart.com/images/product/600x600/491161973/lipton-honey-lemon-green-tea-bags-1-4-g-25-pcs-product-images-o491161973-p491161973-0-202208121842.jpg",
+    "MRP":"Rs 165",
+    "RP":"MRP",
+    "discount":"15 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":24,
+    "title": "Girnar",
+    "description":"Girnar Desi Kahwa Detox Green Tea Bags 10 pcs",
+    "price":93,
+    "image":"https://www.jiomart.com/images/product/600x600/491028264/girnar-desi-kahwa-detox-green-tea-bags-10-pcs-carton-product-images-o491028264-p491028264-0-202203170333.jpg",
+    "MRP":"Rs 100",
+    "RP":"MRP",
+    "discount":"7 %",
+    "offer":"off",
+
+  },
+
+
+];
+
+
+const fruit_juice=[
+
+  {
+    "id":25,
+    "title": "Maaza",
+    "description":"Maaza Mango Drink 600 ml",
+    "price":32,
+    "image":"https://www.jiomart.com/images/product/600x600/490001797/maaza-mango-drink-600-ml-product-images-o490001797-p490001797-0-202203151523.jpg",
+    "MRP":"Rs 40",
+    "RP":"MRP",
+    "discount":"20 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":26,
+    "title": "Guava juice",
+    "description":"B Natural Guava Gush Juice 1 L",
+    "price":65,
+    "image":"https://www.jiomart.com/images/product/600x600/490249967/b-natural-guava-gush-juice-1-l-product-images-o490249967-p490249967-0-202203151704.jpg",
+    "MRP":"Rs 130",
+    "RP":"MRP",
+    "discount":"50 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":27,
+    "title": "Pomegranate Juice",
+    "description":"Real Fruit Power Masala Pomegranate Juice 1 L",
+    "price":67,
+    "image":"https://www.jiomart.com/images/product/600x600/491419456/real-fruit-power-masala-pomegranate-juice-1-l-product-images-o491419456-p491419456-0-202203170317.jpg",
+    "MRP":"Rs 135",
+    "RP":"MRP",
+    "discount":"50 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":28,
+    "title": "Mango Drink",
+    "description":"Paper Boat Aamras Mango Drink 200 ml",
+    "price":17,
+    "image":"https://www.jiomart.com/images/product/600x600/491055555/paperboat-aamras-mango-drink-200-ml-pouch-product-images-o491055555-p491055555-0-202203170237.jpg",
+    "MRP":"Rs 35",
+    "RP":"MRP",
+    "discount":"51 %",
+    "offer":"off",
+
+  },
+];
+
+const atta=[
+
+  {
+    "id":29,
+    "title": "Chakki Atta",
+    "description":"Chakki Atta 10 kg",
+    "price":325,
+    "image":"https://www.jiomart.com/images/product/600x600/491349660/chakki-atta-10-kg-product-images-o491349660-p491349660-0-202206231932.jpg",
+    "MRP":"Rs 395",
+    "RP":"MRP",
+    "discount":"17 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":30,
+    "title": "Aashirvaad Select",
+    "description":"Aashirvaad Select Sharbati Whole Wheat Atta 5 kg",
+    "price":259,
+    "image":"https://www.jiomart.com/images/product/600x600/490005641/aashirvaad-select-sharbati-whole-wheat-atta-5-kg-product-images-o490005641-p490005641-0-202206241206.jpg",
+    "MRP":"Rs 326",
+    "RP":"MRP",
+    "discount":"20 %",
+    "offer":"off",
+
+  },
+
+  
+  {
+    "id":31,
+    "title": "Aashirvaad Superior",
+    "description":"Aashirvaad Superior MP Whole Wheat Atta 5 kg",
+    "price":234,
+    "image":"https://www.jiomart.com/images/product/600x600/490750661/aashirvaad-superior-mp-whole-wheat-atta-5-kg-product-images-o490750661-p590150648-0-202203170602.jpg",
+    "MRP":"Rs 280",
+    "RP":"MRP",
+    "discount":"16 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":32,
+    "title": "Suji",
+    "description":"Suji / Rawa 1 kg",
+    "price":41,
+    "image":"https://www.jiomart.com/images/product/600x600/491349663/suji-rawa-1-kg-product-images-o491349663-p491349663-0-202203170624.jpg",
+    "MRP":"Rs 98",
+    "RP":"MRP",
+    "discount":"58 %",
+    "offer":"off",
+
+  },
+];
+
+const dals=[
+
+  {
+    "id":33,
+    "title": "Chana Dal",
+    "description":"Good Life Roasted Chana Dal / Split Bengal Gram 200 g",
+    "price":22,
+    "image":"https://www.jiomart.com/images/product/600x600/491187295/good-life-roasted-chana-dal-split-bengal-gram-200-g-product-images-o491187295-p491187295-0-202208282349.jpg",
+    "MRP":"Rs 35",
+    "RP":"MRP",
+    "discount":"37 %",
+    "offer":"off",
+
+  },
+
+
+
+  {
+    "id":34,
+    "title": "Toor Dal",
+    "description":"Good Life Unpolished Toor Dal 500 g",
+    "price":79,
+    "image":"https://www.jiomart.com/images/product/600x600/492851037/good-life-unpolished-toor-dal-500-g-product-images-o492851037-p591219161-0-202204261917.jpg",
+    "MRP":"Rs 91",
+    "RP":"MRP",
+    "discount":"13 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":35,
+    "title": "Moong Dal",
+    "description":"Best Farms Moong Dal 500 g",
+    "price":69,
+    "image":"https://www.jiomart.com/images/product/600x600/491168384/best-farms-moong-dal-500-g-product-images-o491168384-p491168384-0-202203170745.jpg",
+    "MRP":"Rs 85",
+    "RP":"MRP",
+    "discount":"18 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":36,
+    "title": "Urad Dal",
+    "description":"Good Life Unpolished Urad Dal 1 kg",
+    "price":161,
+    "image":"https://www.jiomart.com/images/product/600x600/492851047/good-life-unpolished-urad-dal-1-kg-product-images-o492851047-p591219171-0-202204261917.jpg",
+    "MRP":"Rs 170",
+    "RP":"MRP",
+    "discount":"5 %",
+    "offer":"off",
+
+  },
+
+
+];
+
+const oils=[
+
+  {
+    "id":37,
+    "title": "Fortune Mustard Oil",
+    "description":"Fortune Premium Kachi Ghani Pure Mustard Oil 1 L",
+    "price":179,
+    "image":"https://www.jiomart.com/images/product/600x600/490000525/fortune-premium-kachi-ghani-pure-mustard-oil-1-l-product-images-o490000525-p490000525-0-202203170454.jpg",
+    "MRP":"Rs 209",
+    "RP":"MRP",
+    "discount":"14 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":38,
+    "title": "Groundnut Oil",
+    "description":"Gulab Filtered Groundnut Oil 5 L",
+    "price":909,
+    "image":"https://www.jiomart.com/images/product/600x600/490022513/gulab-filtered-groundnut-oil-5-l-product-images-o490022513-p490022513-0-202206301905.jpg",
+    "MRP":"Rs 1171",
+    "RP":"MRP",
+    "discount":"22 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":39,
+    "title": "Sunflower Refined Oil",
+    "description":"Gulab Sungold Refined Sunflower Oil 15 L (Tin)",
+    "price":2109,
+    "image":"https://www.jiomart.com/images/product/600x600/490794273/gulab-sungold-refined-sunflower-oil-15-l-tin-product-images-o490794273-p490794273-0-202209100208.jpg",
+    "MRP":"Rs 3082",
+    "RP":"MRP",
+    "discount":"31 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":40,
+    "title": "Dhara Refined Oil",
+    "description":"Dhara Nourish Vit A E Refined Sunflower Oil 1 L",
+    "price":151,
+    "image":"https://www.jiomart.com/images/product/600x600/490012729/dhara-nourish-refined-sunflower-oil-1-l-product-images-o490012729-p490012729-0-202204281543.jpg",
+    "MRP":"Rs 210",
+    "RP":"MRP",
+    "discount":"28 %",
+    "offer":"off",
+
+  },
+
+
+
+
+
+
+
+
+
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,25 +586,21 @@ const Fru=({x})=>{
     return (
 
 <Col  l={4}  className="d-inline-block card col-card" style={{width:'16rem',margin:'10px'}} id={value.id}>
- <div >
- <img className="card-img-top position-relative" src={value.image} width="100%" height="200" />
- <div className="position-absolute top-0 start-0 " >
+<div className="card " style={{height:'65vh'}} >
+  <img className="card-img-top position-relative" src={value.image} alt="Card image cap" style={{width:'100%',height:'200px'}}/>
+  <div className="position-absolute top-0 start-0 " >
  <h2><span class="badge text-bg-danger rounded-circle"  >{value.discount}{value.offer}
  </span></h2>
  </div>
- </div>
-  
 
- 
-    <div className="card-body">
-   
-    <h5 class="card-title">{value.title}</h5>
-   
-      <p className="card-text">{value.description} </p>
-      <p className="card-price"><span><b>Rs {value.price}</b></span>&ensp;&ensp;<span>{value.RP}&nbsp;<s>{value.MRP}</s></span></p>
-     <button className="btn btn-primary add-to"  >Add to cart</button>
-    </div>
+  <div className="card-body">
+    <h5 className="card-title">{value.title}</h5>
+    <p className="card-text">{value.description}</p>
+    <p className="card-price"><span><b>Rs {value.price}</b></span>&ensp;&ensp;<span>{value.RP}&nbsp;<s>{value.MRP}</s></span></p>
     
+  </div>
+  <button className="btn btn-primary add-to"  >Add to cart</button>
+</div>
   </Col>
     );
   })
@@ -241,7 +617,7 @@ return(
 export default function GroceriesData(){
   return(
    <div >
-<h1 style={css_style}>Fruits and Vegetables</h1>
+<h1 style={css_style}><marquee>  Fruits and Vegetables</marquee> </h1>
 <br/>
 <h1 style={css_style} id="fruits">Fruits</h1>
 
@@ -252,8 +628,52 @@ export default function GroceriesData(){
      <br/>
      <h1 style={css_style} id="veg">Vegetables</h1>
      <Fru x={vegetable} />
+
+     <br/>
+     <h1 style={css_style}><marquee>Beverages</marquee> </h1>
+     <br/>
      <h1 id="juice">Juice</h1>
+     <Fru x={soft_drinks}/>
+<br/>
      <h1 id="tea">Tea</h1>
+<Fru x={tea}/>
+<br/>
+     <h1 id="fjuice">Fruit juice</h1>
+<Fru x={fruit_juice}/>
+
+<br/>
+<h1 style={css_style}><marquee>Staples</marquee> </h1>
+     <br/>
+     <h1 id="atta">Atta & Sooji</h1>
+     <Fru x={atta}/>
+<br/>
+      <h1 id="dal">Dals</h1>
+<Fru x={dals}/>
+<br/>
+     <h1 id="oil">Edible oil</h1>
+<Fru x={oils}/> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    </div>
     
   );

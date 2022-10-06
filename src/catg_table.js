@@ -36,10 +36,43 @@ const Tab=()=>{
    <ul  style={{listStyle:'none'}}>
     <li><a href="#juice" className="text-decoration-none">Energy and Soft Drinks</a></li>
     <li ><a href="#tea" className="text-decoration-none ">Tea</a></li>
+    <li ><a href="#fjuice" className="text-decoration-none ">Fruit juice</a></li>
    </ul>
 </div></Col>
 
     </Row>
+
+
+    <Row>
+<Col ><a  className="text-decoration-none text-dark"  data-bs-toggle="collapse" href="#collapseExample3">Staples</a>
+</Col>
+    </Row>
+
+    <Row>
+        <Col><div class="collapse" id="collapseExample3">
+ 
+   <ul  style={{listStyle:'none'}}>
+    <li><a href="#atta" className="text-decoration-none">Atta , Flours & Sooji</a></li>
+    <li ><a href="#dal" className="text-decoration-none ">Dals and Pulses</a></li>
+    <li ><a href="#oil" className="text-decoration-none ">Edible Oils</a></li>
+   </ul>
+</div></Col>
+
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -60,6 +60,62 @@ const Tab=()=>{
 
     </Row>
 
+    <Row>
+<Col ><a  className="text-decoration-none text-dark"  data-bs-toggle="collapse" href="#collapseExample4">Dairy & Bakery</a>
+</Col>
+
+    </Row>
+
+    <Row>
+        <Col><div class="collapse" id="collapseExample4">
+ 
+   <ul  style={{listStyle:'none'}}>
+    <li><a href="#dairy" className="text-decoration-none">Dairy</a></li>
+    <li ><a href="#ghee" className="text-decoration-none ">Ghee</a></li>
+
+   </ul>
+</div></Col>
+
+    </Row>
+
+
+    <Row>
+<Col ><a  className="text-decoration-none text-dark"  data-bs-toggle="collapse" href="#collapseExample5">Personal Care</a>
+</Col>
+
+    </Row>
+
+    <Row>
+        <Col><div class="collapse" id="collapseExample5">
+ 
+   <ul  style={{listStyle:'none'}}>
+    <li><a href="#hair" className="text-decoration-none">Hair Care</a></li>
+    <li ><a href="#oral" className="text-decoration-none ">Oral Care</a></li>
+    <li ><a href="#skin" className="text-decoration-none ">Skin Care</a></li>
+
+   </ul>
+</div></Col>
+
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

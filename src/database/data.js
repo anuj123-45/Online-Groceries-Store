@@ -538,6 +538,240 @@ const oils=[
     "offer":"off",
 
   },
+];
+
+
+const dairy=[
+  {
+    "id":41,
+    "title": "Amul Butter",
+    "description":"Amul Butter 500 g (Carton)",
+    "price":245,
+    "image":"https://www.jiomart.com/images/product/600x600/490001392/amul-butter-500-g-carton-product-images-o490001392-p490001392-0-202203152128.jpg",
+    "MRP":"Rs 255",
+    "RP":"MRP",
+    "discount":"3 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":42,
+    "title": "Amul Toned Milk",
+    "description":"Amul Taaza Homogenised Toned Milk 1 L (Tetra Pak)",
+    "price":67,
+    "image":"https://www.jiomart.com/images/product/600x600/490010311/amul-taaza-homogenised-toned-milk-1-l-tetra-pak-product-images-o490010311-p490010311-0-202203152257.jpg",
+    "MRP":"Rs 70",
+    "RP":"MRP",
+    "discount":"4 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":43,
+    "title": "Chocolate Milk Shake",
+    "description":"Britannia Winkin'Cow Chocolate Milkshake 200 ml",
+    "price":26,
+    "image":"https://www.jiomart.com/images/product/600x600/491491631/britannia-winkin-cow-chocolate-milkshake-200-ml-tetra-pak-product-images-o491491631-p491491631-0-202203170216.jpg",
+    "MRP":"Rs 40",
+    "RP":"MRP",
+    "discount":"35 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":44,
+    "title": "Cavin Cold Coffee",
+    "description":"Cavin's Cold Coffee Flavoured Milk 180 ml (Tetra Pak)",
+    "price":26,
+    "image":"https://www.jiomart.com/images/product/600x600/492427534/cavin-s-cold-coffee-flavoured-milk-180-ml-tetra-pak-product-images-o492427534-p590841084-0-202203151134.jpg",
+    "MRP":"Rs 35",
+    "RP":"MRP",
+    "discount":"25 %",
+    "offer":"off",
+
+  },
+];
+
+
+const ghee=[
+  
+  {
+    "id":45,
+    "title": "Milky Mist Ghee",
+    "description":"Milky Mist Cow Ghee 1 L (Jar)",
+    "price":609,
+    "image":"https://www.jiomart.com/images/product/600x600/491070289/milky-mist-cow-ghee-1-l-jar-product-images-o491070289-p590950364-0-202203170918.jpg",
+    "MRP":"Rs 699",
+    "RP":"MRP",
+    "discount":"12 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":46,
+    "title": "Gowardhan Ghee",
+    "description":"Gowardhan Pure Cow Ghee 1 L (Pouch)",
+    "price":609,
+    "image":"https://www.jiomart.com/images/product/600x600/490010244/gowardhan-pure-cow-ghee-1-l-pouch-product-images-o490010244-p490010244-0-202203150918.jpg",
+    "MRP":"Rs 655",
+    "RP":"MRP",
+    "discount":"7 %",
+    "offer":"off",
+
+  },
+
+
+  {
+    "id":47,
+    "title": "Patanjali Ghee",
+    "description":"Patanjali Cow Ghee 500 ml (Carton)",
+    "price":310,
+    "image":"https://www.jiomart.com/images/product/600x600/491249531/patanjali-cow-ghee-500-ml-carton-product-images-o491249531-p491249531-0-202203152254.jpg",
+  },
+
+  {
+    "id":48,
+    "title": "Chitale Ghee",
+    "description":"Chitale Pure Cow Ghee 500 ml (Container)",
+    "price":309,
+    "image":"https://www.jiomart.com/images/product/600x600/491432517/chitale-pure-cow-ghee-500-ml-container-product-images-o491432517-p590113351-0-202203151907.jpg",
+    "MRP":"Rs 330",
+    "RP":"MRP",
+    "discount":"6 %",
+    "offer":"off",
+
+  },
+];
+
+const hair_care=[
+
+  {
+    "id":49,
+    "title": "Dove Shampoo",
+    "description":"Dove Nutritive Solutions Daily Shine Shampoo 650 ml",
+    "price":370,
+    "image":"https://www.jiomart.com/images/product/600x600/490729027/dove-nutritive-solutions-daily-shine-shampoo-650-ml-product-images-o490729027-p490729027-0-202203150922.jpg",
+    "MRP":"Rs 740",
+    "RP":"MRP",
+    "discount":"50 %",
+    "offer":"off",
+
+  },
+
+
+
+  {
+    "id":50,
+    "title": "Tresemme Shampoo",
+    "description":"Tresemme Hair Fall Defense Shampoo 580 ml",
+    "price":370,
+    "image":"https://www.jiomart.com/images/product/600x600/490966833/tresemme-hair-fall-defense-shampoo-580-ml-product-images-o490966833-p490966833-0-202203150929.jpg",
+    "MRP":"Rs 670",
+    "RP":"MRP",
+    "discount":"44 %",
+    "offer":"off",
+
+  },
+
+
+
+  {
+    "id":51,
+    "title": "Sunslik Shampoo",
+    "description":"Sunsilk Lusciously Thick & Long Shampoo 650 ml",
+    "price":307,
+    "image":"https://www.jiomart.com/images/product/600x600/490729029/sunsilk-lusciously-thick-long-shampoo-650-ml-product-images-o490729029-p490729029-0-202203151352.jpg",
+    "MRP":"Rs 615",
+    "RP":"MRP",
+    "discount":"50 %",
+    "offer":"off",
+
+  },
+
+  
+
+  {
+    "id":52,
+    "title": "Coconut Oil",
+    "description":"Parachute 100% Pure Coconut Hair Oil 600 ml",
+    "price":222,
+    "image":"https://www.jiomart.com/images/product/600x600/491294658/parachute-100-pure-coconut-hair-oil-600-ml-product-images-o491294658-p590120586-0-202203170157.jpg",
+    "MRP":"Rs 239",
+    "RP":"MRP",
+    "discount":"7 %",
+    "offer":"off",
+
+  },
+
+];
+
+
+const oral_care=[
+
+  {
+    "id":53,
+    "title": "Colgate Max Fresh",
+    "description":"Colgate Max Fresh Anticavity Toothpaste 150 g (Pack of 3)",
+    "price":230,
+    "image":"https://www.jiomart.com/images/product/600x600/491652548/colgate-max-fresh-spicy-fresh-anticavity-toothpaste-150-g-pack-of-3-product-images-o491652548-p590126552-0-202205172345.jpg",
+    "MRP":"Rs 330",
+    "RP":"MRP",
+    "discount":"30 %",
+    "offer":"off",
+
+  },
+
+  {
+    "id":54,
+    "title": "Colgate Vedshakti",
+    "description":"Colgate Swarna Vedshakti Toothpaste 300 g",
+    "price":118,
+    "image":"https://www.jiomart.com/images/product/600x600/491438575/colgate-swarna-vedshakti-toothpaste-300-g-product-images-o491438575-p590308497-0-202209070230.jpg",
+    "MRP":"Rs 178",
+    "RP":"MRP",
+    "discount":"33 %",
+    "offer":"off",
+
+  },
+
+
+ 
+  {
+    "id":55,
+    "title": "Colgate Aromatic",
+    "description":"Colgate Visible White O2 Aromatic Mint Toothpaste 50 g",
+    "price":200,
+    "image":"https://www.jiomart.com/images/product/600x600/492848090/colgate-visible-white-o2-aromatic-mint-toothpaste-50-g-product-images-o492848090-p591193843-0-202205172253.jpg",
+    "MRP":"Rs 250",
+    "RP":"MRP",
+    "discount":"20 %",
+    "offer":"off",
+
+  },
+
+
+
+  {
+    "id":56,
+    "title": "Dabur Dant Rakshak",
+    "description":"Dabur Dant Rakshak Ayurvedic Paste 175 g (Pack of 2)",
+    "price":79,
+    "image":"https://www.jiomart.com/images/product/600x600/491961280/dabur-dant-rakshak-ayurvedic-paste-175-g-pack-of-2-product-images-o491961280-p590152287-0-202203170716.jpg",
+    "MRP":"Rs 159",
+    "RP":"MRP",
+    "discount":"50 %",
+    "offer":"off",
+
+  },
+
+
+
+
 
 
 
@@ -548,21 +782,6 @@ const oils=[
 
 
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -652,6 +871,26 @@ export default function GroceriesData(){
 <br/>
      <h1 id="oil">Edible oil</h1>
 <Fru x={oils}/> 
+
+
+<br/>
+<h1 style={css_style}><marquee>Dairy Products</marquee> </h1>
+     <br/>
+     <h1 id="dairy">Dairy</h1>
+     <Fru x={dairy}/>
+<br/>
+      <h1 id="ghee">Ghee</h1>
+<Fru x={ghee}/>
+
+
+<br/>
+<h1 style={css_style}><marquee>Personal Care</marquee> </h1>
+     <br/>
+     <h1 id="hair">Hair Care</h1>
+     <Fru x={hair_care}/>
+<br/>
+<h1 id="hair">Oral Care</h1>
+     <Fru x={oral_care}/>
 
 
 

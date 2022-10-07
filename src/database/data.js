@@ -11,25 +11,13 @@ const css_style={textAlign:'center'};
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const Fru=({x})=>{
 
   const items=x.map((value)=>{
     return (
 
 <Col  l={4}  className="d-inline-block card col-card" style={{width:'16rem',margin:'10px'}} id={value.id}>
-<div className="card " style={{height:'65vh'}} >
+<div className="card " style={{height:'69vh'}} >
   <img className="card-img-top position-relative" src={value.image} alt="Card image cap" style={{width:'100%',height:'200px'}}/>
   <div className="position-absolute top-0 start-0 " >
  <h2><span class="badge text-bg-danger rounded-circle"  >{value.discount}{value.offer}
@@ -42,7 +30,7 @@ const Fru=({x})=>{
     <p className="card-price"><span><b>Rs {value.price}</b></span>&ensp;&ensp;<span>{value.RP}&nbsp;<s>{value.MRP}</s></span></p>
     
   </div>
-  <button className="btn btn-primary add-to"  >Add to cart</button>
+  <button type="button" class="btn btn-outline-warning fw-bold">Add To Cart</button>
 </div>
   </Col>
     );

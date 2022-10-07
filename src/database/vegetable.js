@@ -27,8 +27,8 @@ const vegetable=[
   
   {
     "id":11,
-    "title": "Bhendi",
-    "description":"Bhendi (Okra) 250 g",
+    "title": "Bhindi",
+    "description":"Bhindi (Okra) 250 g",
     "price":11,
     "image":"https://www.jiomart.com/images/product/600x600/590003550/bhendi-okra-500-g-product-images-o590003550-p590003550-0-202203170339.jpg",
   },

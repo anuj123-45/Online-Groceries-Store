@@ -11,6 +11,11 @@ box-sizing: border-box;
   
   .col-card:hover {
     transform: scale(1.1); 
+    
+  box-shadow: 5px 10px #888888; 
+  border: 1px solid;
+
+
  
   }
 

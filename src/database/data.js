@@ -11,20 +11,20 @@ const css_style={textAlign:'center'};
 
 
 
-const Fru=({x})=>{
+const Fru=(props)=>{
 
-  const items=x.map((value)=>{
+  const items=props.x.map((value)=>{
     return (
 
 <Col  l={4}  className="d-inline-block card col-card" style={{width:'16rem',margin:'10px'}} id={value.id}>
-<div className="card " style={{height:'69vh'}} >
-  <img className="card-img-top position-relative" src={value.image} alt="Card image cap" style={{width:'100%',height:'200px'}}/>
+<div className="card h-200" >
+  <img className="card-img-top position-relative" src={value.image} alt="Card image cap" style={{width:'100%'}}/>
   <div className="position-absolute top-0 start-0 " >
  <h2><span class="badge text-bg-danger rounded-circle"  >{value.discount}{value.offer}
  </span></h2>
  </div>
 
-  <div className="card-body">
+  <div className="card-body " style={{height:'160px'}}>
     <h5 className="card-title">{value.title}</h5>
     <p className="card-text">{value.description}</p>
     <p className="card-price"><span><b>Rs {value.price}</b></span>&ensp;&ensp;<span>{value.RP}&nbsp;<s>{value.MRP}</s></span></p>
@@ -44,6 +44,32 @@ return(
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default Fru;
 

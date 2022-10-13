@@ -1,17 +1,23 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
+import React  from "react";
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './App.css';
+
+
+
 
 const Nav = () => {
   return (
+
    <Container className="mt-2 ">
+
      <Row> 
      <Col lg={4}  className="d-flex justify-content-start ">
       <div>
-      <h3>Online Groceries Store</h3>
+     <a href="/home" style={{textDecoration:'none'}}><h3 id="main-head" style={{fontWeight:'bolder'}}>Online Groceries Store</h3></a>
       </div>
       </Col>
 
@@ -36,10 +42,9 @@ const Nav = () => {
   
       <div className="d-flex gap-3">
        <div>
-       <a href="#" >
-        <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+<a href="#"> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a><sup>{'3'}</sup>
        </div>
-  
+      
 
        <div>
        <button type="button" className="btn btn-danger">
@@ -61,7 +66,7 @@ const Nav = () => {
 
       </Row>
       </Container>
-   
+
  
   );
 };

@@ -1,24 +1,49 @@
-import React from 'react';
+import React , {useState} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { type } from '@testing-library/user-event/dist/type';
+import Products from './jsondata';
+
+import Slide from './slider';
+import {Link}  from 'react-router-dom';
 
 const Tab=()=>{
-    return(
+    const[data,setData]=useState(Products);
 
-  <Container className='border border-3 '> 
-  <h4 >Categories</h4>   
-    <Row>
+  const filterResult=(cartitem)=>{
+    const result=Products.filter((curData)=>{
+        return curData.category===cartitem;
+    })
+   
+    setData(result);
+
+    console.log(result);
+  }
+
+
+const addToCart=(cartData)=>{
+console.log(cartData);
+}
+
+    return(
+   <>
+  
+
+
+<div className="d-flex align-items-center" style={{border:'2px solid black'}} >
+<Container className='border border-3  ' style={{width:'300px',background:'#D5D5D5'}}> 
+<Row><Col><h3>Category</h3></Col></Row>
+<Row >
 <Col ><a  className="text-decoration-none text-dark"  data-bs-toggle="collapse" href="#collapseExample"><b>Fruits & Vegetables</b></a>
 </Col>
     </Row>
+
     <Row>
-        <Col><div class="collapse" id="collapseExample">
+        <Col><div className="collapse" id="collapseExample">
  
    <ul  style={{listStyle:'none'}}>
-    <li><a href="#fruits" className="text-decoration-none text-danger"><b>Fruits</b></a></li>
-    <li ><a href="#veg" className="text-decoration-none text-danger"><b>Vegetables</b></a></li>
+    <li onClick={()=>filterResult("Fruits")}><a href="#f" className="text-decoration-none text-dark" ><b>Fruits</b></a></li>
+    <li onClick={()=>filterResult("Vegetables")}><a href="#f" className="text-decoration-none text-dark"><b>Vegetables</b></a></li>
    </ul>
 </div></Col>
 
@@ -28,15 +53,15 @@ const Tab=()=>{
     <Row>
 <Col ><a  className="text-decoration-none text-dark"  data-bs-toggle="collapse" href="#collapseExample2"><b>Beverages</b></a>
 </Col>
-    </Row>
+    </Row> 
 
     <Row>
-        <Col><div class="collapse" id="collapseExample2">
+        <Col><div className="collapse" id="collapseExample2">
  
    <ul  style={{listStyle:'none'}}>
-    <li><a href="#juice" className="text-decoration-none text-danger"><b>Energy and Soft Drinks</b></a></li>
-    <li ><a href="#tea" className="text-decoration-none text-danger"><b>Tea</b></a></li>
-    <li ><a href="#fjuice" className="text-decoration-none text-danger"><b>Fruit juice</b></a></li>
+    <li  onClick={()=>filterResult("Energy and Soft Drinks")}><a href="#f" className="text-decoration-none text-dark"><b>Energy and Soft Drinks</b></a></li>
+    <li onClick={()=>filterResult("Tea")}><a href="#f" className="text-decoration-none text-dark"><b>Tea</b></a></li>
+    <li onClick={()=>filterResult("Fruit juice")}><a href="#f" className="text-decoration-none text-dark"><b>Fruit juice</b></a></li>
    </ul>
 </div></Col>
 
@@ -49,12 +74,12 @@ const Tab=()=>{
     </Row>
 
     <Row>
-        <Col><div class="collapse" id="collapseExample3">
+        <Col><div className="collapse" id="collapseExample3">
  
    <ul  style={{listStyle:'none'}}>
-    <li><a href="#atta" className="text-decoration-none text-danger"><b>Atta , Flours & Sooji</b></a></li>
-    <li ><a href="#dal" className="text-decoration-none text-danger"><b>Dals and Pulses</b></a></li>
-    <li ><a href="#oil" className="text-decoration-none text-danger"><b>Edible Oils</b></a></li>
+    <li onClick={()=>filterResult("Atta , Flours & Sooji")}><a href="#f" className="text-decoration-none text-dark"><b>Atta , Flours & Sooji</b></a></li>
+    <li  onClick={()=>filterResult("Dals and Pulses")}><a href="#f" className="text-decoration-none text-dark"><b>Dals and Pulses</b></a></li>
+    <li  onClick={()=>filterResult("Edible Oils")}><a href="#f" className="text-decoration-none text-dark"><b>Edible Oils</b></a></li>
    </ul>
 </div></Col>
 
@@ -67,11 +92,11 @@ const Tab=()=>{
     </Row>
 
     <Row>
-        <Col><div class="collapse" id="collapseExample4">
+        <Col><div className="collapse" id="collapseExample4">
  
    <ul  style={{listStyle:'none'}}>
-    <li><a href="#dairy" className="text-decoration-none text-danger"><b>Dairy</b></a></li>
-    <li ><a href="#ghee" className="text-decoration-none text-danger"><b>Ghee</b></a></li>
+    <li onClick={()=>filterResult("Dairy")}><a href="#f" className="text-decoration-none text-dark"><b>Dairy</b></a></li>
+    <li onClick={()=>filterResult("Ghee")}><a href="#f" className="text-decoration-none text-dark"><b>Ghee</b></a></li>
 
    </ul>
 </div></Col>
@@ -86,55 +111,57 @@ const Tab=()=>{
     </Row>
 
     <Row>
-        <Col><div class="collapse" id="collapseExample5">
+        <Col><div className="collapse" id="collapseExample5">
  
    <ul  style={{listStyle:'none'}}>
-    <li><a href="#hair" className="text-decoration-none text-danger"><b>Hair Care</b></a></li>
-    <li ><a href="#oral" className="text-decoration-none text-danger"><b>Oral Care</b></a></li>
+    <li onClick={()=>filterResult("Hair Care")}><a href="#f" className="text-decoration-none text-dark"><b>Hair Care</b></a></li>
+    <li onClick={()=>filterResult("Oral Care")}><a href="#f" className="text-decoration-none text-dark"><b>Oral Care</b></a></li>
 
    </ul>
 </div></Col>
 
+    
+     
+
     </Row>
 
+</Container>  
+<Slide/>
+</div>
+
+<Container style={{marginTop:'20px'}} id="f">
+<Row style={{justifyContent:'center',border:'2px solid black',textAlign:'center'}}>
+        
+        {data.map((value)=>{
+        return(
+           
+            
+                <div  l={4} className="d-inline-block card col-card" style={{width:'16rem',margin:'10px'}} key={value.id}>
+          <div className="card h-200" >
+          <img className="card-img-top position-relative" src={value.image} alt="Card image cap" style={{width:'100%'}}/>
+          <div className="position-absolute top-0 start-0 " >
+         <h2><span className="badge text-bg-danger rounded-circle"  >{value.discount}{value.offer}
+         </span></h2>
+         </div>
+        
+          <div className="card-body " style={{height:'160px'}}>
+            <h5 className="card-title">{value.title}</h5>
+            <p className="card-text">{value.description}</p>
+            <p className="card-price"><span><b>Rs {value.price}</b></span>&ensp;&ensp;<span>{value.RP}&nbsp;<s>{value.MRP}</s></span></p>
+            
+          </div> 
+          <button type="button" className="btn btn-outline-warning fw-bold"  onClick={() =>addToCart(value)}>Add To Cart</button>
+        </div>
+        </div> 
+        
+        ); 
+        })}
+        
+        </Row>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </Container>  
-
+</Container>
+    </>
     );
 }
 

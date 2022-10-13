@@ -1,8 +1,8 @@
 *{
-margin:0;
-padding:0;
-box-sizing: border-box;
-}
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  }
 
 .col-card {
   
@@ -20,4 +20,16 @@ box-sizing: border-box;
   }
 
 
-  
+  .shop-cart-main{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/623/464/non_2x/concept-of-shopping-online-with-smart-phone-on-blue-sky-background-vector.jpg');
+	background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+#main-head:hover{
+  color:coral;
+  text-shadow: 2px 2px #FF0000;
+}

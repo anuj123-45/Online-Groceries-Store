@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Products from './jsondata';
-
+import CartList from './cartlist';
 import Slide from './slider';
 import {Link}  from 'react-router-dom';
 
@@ -20,19 +20,43 @@ const Tab=()=>{
     console.log(result);
   }
 
+  
 
-const addToCart=(cartData)=>{
-console.log(cartData);
+
+//const addToCart=(cartData)=>{
+//   if(s.has(cartData.id)){
+//     alert("item taken");
+
+//     return;
+//   }
+//   else {
+//    
+ 
+//   }
+//   s.add(cartData.id);
+// }
+
+const  [cart,setCart]=useState([]);
+
+function addToCart(cartData){
+   setCart([...cart,{...cartData,quantity:1}]);
 }
+
+
+
+
+
+
 
     return(
    <>
   
-
+<CartList cart={cart}/>
 
 <div className="d-flex align-items-center" style={{border:'2px solid black'}} >
 <Container className='border border-3  ' style={{width:'300px',background:'#D5D5D5'}}> 
-<Row><Col><h3>Category</h3></Col></Row>
+
+    <Row><Col><h3>Category</h3></Col></Row>
 <Row >
 <Col ><a  className="text-decoration-none text-dark"  data-bs-toggle="collapse" href="#collapseExample"><b>Fruits & Vegetables</b></a>
 </Col>
@@ -119,10 +143,6 @@ console.log(cartData);
 
    </ul>
 </div></Col>
-
-    
-     
-
     </Row>
 
 </Container>  
@@ -137,7 +157,7 @@ console.log(cartData);
            
             
                 <div  l={4} className="d-inline-block card col-card" style={{width:'16rem',margin:'10px'}} key={value.id}>
-          <div className="card h-200" >
+          <div className="card h-200" style={{height:'70vh'}}>
           <img className="card-img-top position-relative" src={value.image} alt="Card image cap" style={{width:'100%'}}/>
           <div className="position-absolute top-0 start-0 " >
          <h2><span className="badge text-bg-danger rounded-circle"  >{value.discount}{value.offer}

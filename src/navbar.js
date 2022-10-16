@@ -1,23 +1,31 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import React  from "react";
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './App.css';
+import {Link}  from 'react-router-dom';
+import React, {useState} from 'react';
 
 
 
 
-const Nav = () => {
+const Nav = (props) => {
+
+
+
   return (
+<>
 
    <Container className="mt-2 ">
 
      <Row> 
      <Col lg={4}  className="d-flex justify-content-start ">
       <div>
-     <a href="/home" style={{textDecoration:'none'}}><h3 id="main-head" style={{fontWeight:'bolder'}}>Online Groceries Store</h3></a>
+      
+     
+ <a href="#" style={{textDecoration:'none'}} id="main-head" onClick={()=>props.handleShow(false)}><h3>Online Groceries Store</h3></a>
+
       </div>
       </Col>
 
@@ -29,6 +37,7 @@ const Nav = () => {
             placeholder="Search"
             aria-label="Search"
             aria-describedby="search-addon"
+            onKeyUp={(e)=>props.searchCat(e.target.value)}
           />
           <span className="input-group-text border-0" id="search-addon">
             <i className="fas fa-search"></i> 
@@ -42,24 +51,34 @@ const Nav = () => {
   
       <div className="d-flex gap-3">
        <div>
-<a href="#"> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a><sup>{'3'}</sup>
+<button  onClick={()=>props.handleShow(true)}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i><sup>{props.count}</sup>
+</button>
        </div>
-      
+   
+       <div>
+   <button type="button" className="btn btn-primary">
+   <a href='/' className="text-decoration-none text-dark">
+            Home
+          </a>
+        </button>
+   </div>
 
        <div>
        <button type="button" className="btn btn-danger">
-          <a href="#" className="text-decoration-none text-dark">
+          <Link to='/grocery/signup' className="text-decoration-none text-dark">
             Sign Up
-          </a>
+          </Link>
         </button>
        </div>
    <div>
    <button type="button" className="btn btn-warning">
-          <a href="#" className="text-decoration-none text-dark">
+   <Link to="/grocery/login" className="text-decoration-none text-dark">
             Login
-          </a>
+          </Link>
         </button>
    </div>
+
+
      </div>
      </div>
       </Col>
@@ -67,6 +86,7 @@ const Nav = () => {
       </Row>
       </Container>
 
+  </>
  
   );
 };

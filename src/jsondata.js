@@ -419,7 +419,7 @@ const Products=[
     "RP":"MRP",
     "discount":"37 %",
     "offer":"off",
-    "category":"Dals and Pulses",
+    "category":"Pulses",
   
   },
   
@@ -435,7 +435,7 @@ const Products=[
     "RP":"MRP",
     "discount":"13 %",
     "offer":"off",
-    "category":"Dals and Pulses",
+    "category":"Pulses",
   
   },
   
@@ -450,7 +450,7 @@ const Products=[
     "RP":"MRP",
     "discount":"18 %",
     "offer":"off",
-    "category":"Dals and Pulses",
+    "category":"Pulses",
   
   },
   
@@ -464,7 +464,7 @@ const Products=[
     "RP":"MRP",
     "discount":"5 %",
     "offer":"off",
-    "category":"Dals and Pulses",
+    "category":"Pulses",
   
   },
   {

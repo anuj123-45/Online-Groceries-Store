@@ -42,14 +42,14 @@ var y=document.forms['frms']['password'].value;
 				<div className="d-flex justify-content-center form_container">
 					<form name="frms">
 						<div className="input-group mb-3">
-							<div className="input-group-append">
-								<span className="input-group-text"><i className="fas fa-user"></i></span>
+							<div className="input-group-append" >
+								<span className="input-group-text" style={{padding:'15px'}}><i className="fas fa-user" ></i></span>
 							</div>
 							<input type="text" name="uname" className="form-control input_user"  placeholder="username"/>
 						</div>
 						<div className="input-group mb-2">
 							<div className="input-group-append">
-								<span className="input-group-text"><i className="fas fa-key"></i></span>
+								<span className="input-group-text"  style={{padding:'12px'}}><i className="fas fa-key"></i></span>
 							</div>
 							<input type="password" name="password" className="form-control input_pass"  placeholder="password"/>
 						</div>

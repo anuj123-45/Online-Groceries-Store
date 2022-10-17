@@ -65,7 +65,7 @@ const Nav = (props) => {
        <div className="d-flex">
 <button  onClick={()=>props.handleShow(true)}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i>
 </button>
-<sup className="text-danger"><h3>{props.count}</h3></sup>
+<sup className="text-danger"><h4 style={{fontWeight:'bolder'}}>{props.count}</h4></sup>
        </div>
      
      
@@ -87,7 +87,7 @@ const Nav = (props) => {
    </div>
 
    <div>
-   <button type="button" className="btn btn-primary">
+   <button type="button" className="btn btn-secondary">
    <a href='/' className="text-decoration-none text-dark">
           Login as Admin
           </a>

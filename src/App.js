@@ -8,6 +8,7 @@ import Login from './login';
 import CartList from './cartlist';
 import Admin from './admin_page';
 import Cat from './cat_sec';
+import Payment from './payment';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
 <Route  path='/grocery/signup' element={<Signup/>}/>
 <Route  path='/grocery/login' element={<Login/>}/>
 <Route  path='/cartlist' element={<CartList/>}/>
+<Route  path='/goto/payment/paymentgateway' element={<Payment/>}/>
 </Routes>
     </BrowserRouter>
 

@@ -1,15 +1,9 @@
 import React ,{useState} from 'react';
-import Slide from './slider';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Products from './jsondata';
 import Pr from './product';
-import { log } from 'react-modal/lib/helpers/ariaAppHider';
 import Nav from './navbar';
 import Hero from './hero_sec';
 import CartList from './cartlist';
-import { Table } from 'react-bootstrap';
 
 const s=new Set();
 const Cat=()=>{
@@ -52,7 +46,7 @@ if(s.has(data.id)){
     return;
 }
 else {
-    setCart([...cart,{...data,quantity:1}]);
+    setCart([...cart,data]);
     console.log("data",cart);
     s.add(data.id);
    
@@ -71,6 +65,14 @@ const handleShow=(value)=>{
     setShowCart(value);
 }
 
+const handleChange = (item, d) => {
+    const ind = cart.indexOf(item);
+    const arr = cart;
+    arr[ind].amount += d;
+
+    if (arr[ind].amount === 0) arr[ind].amount = 1;
+    setCart([...arr]);
+  }
 
 
     return(
@@ -86,7 +88,7 @@ const handleShow=(value)=>{
 
  {
     showCart?
-   <CartList cart={cart}/>:
+   <CartList cart={cart} setCart={setCart} handleChange={handleChange}/>:
 <div>
 <Hero filterResult={filterResult}></Hero>
 

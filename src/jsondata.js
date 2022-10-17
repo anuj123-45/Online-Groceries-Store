@@ -6,6 +6,7 @@ const Products=[
       "price":99,
       "image":"https://www.jiomart.com/images/product/600x600/590004487/apple-indian-6-pcs-pack-approx-750-g-950-g-product-images-o590004487-p590004487-0-202203170227.jpg",
       "category":"Fruits",
+      "amount":1,
     },
   
   {
@@ -15,6 +16,7 @@ const Products=[
       "price":119,
       "image":"https://www.jiomart.com/images/product/600x600/590001569/kiwi-green-zespri-3-pcs-pack-approx-240-g-300-g-product-images-o590001569-p590034325-0-202203150039.jpg",
       "category":"Fruits",
+      "amount":1,
     },
   
   
@@ -25,6 +27,7 @@ const Products=[
       "price":82,
       "image":"https://www.jiomart.com/images/product/600x600/590000070/pineapple-queen-1-pc-approx-700-g-1200-g-product-images-o590000070-p590000070-0-202203170357.jpg",
       "category":"Fruits",
+      "amount":1,
     },
   
   
@@ -35,6 +38,7 @@ const Products=[
       "price":139,
       "image":"https://www.jiomart.com/images/product/600x600/590001265/watermelon-kiran-1-pc-approx-2300-g-3000-g-product-images-o590001265-p590041413-0-202203142036.jpg",
       "category":"Fruits",
+      "amount":1,
     },
   
   
@@ -49,6 +53,7 @@ const Products=[
     "discount":"17 %",
     "offer":"off",
     "category":"Fruits",
+    "amount":1,
   
   },
   
@@ -63,6 +68,7 @@ const Products=[
     "discount":"10 %",
     "offer":"off",
     "category":"Fruits",
+    "amount":1,
   
   },
   
@@ -77,6 +83,7 @@ const Products=[
     "discount":"18 %",
     "offer":"off",
     "category":"Fruits",
+    "amount":1,
   
   },
   
@@ -92,6 +99,7 @@ const Products=[
     "discount":"25 %",
     "offer":"off",
     "category":"Fruits",
+    "amount":1,
   
   },
   
@@ -102,6 +110,7 @@ const Products=[
     "price":19.50,
     "image":"https://www.jiomart.com/images/product/600x600/590003661/cucumber-regular-500-g-product-images-o590003661-p590034099-0-202203141953.jpg",
     "category":"Vegetables",
+    "amount":1,
   },
   
   
@@ -112,6 +121,7 @@ const Products=[
   "price":66.0,
   "image":"https://www.jiomart.com/images/product/600x600/590003662/green-capsicum-500-g-product-images-o590003662-p590003662-0-202203151617.jpg",
   "category":"Vegetables",
+  "amount":1,
   },
   
   
@@ -124,6 +134,7 @@ const Products=[
   "price":11,
   "image":"https://www.jiomart.com/images/product/600x600/590003550/bhendi-okra-500-g-product-images-o590003550-p590003550-0-202203170339.jpg",
   "category":"Vegetables",
+  "amount":1,
   },
   
   
@@ -134,6 +145,7 @@ const Products=[
   "price":35,
   "image":"https://www.jiomart.com/images/product/600x600/590003544/brinjal-black-big-500-g-product-images-o590003544-p590003544-0-202203170238.jpg",
   "category":"Vegetables",
+  "amount":1,
   },
   
   
@@ -144,6 +156,7 @@ const Products=[
   "price":10,
   "image":"https://www.jiomart.com/images/product/600x600/590000721/arbi-colocasia-leaves-1-bunch-approx-50-g-150-g-product-images-o590000721-p590000721-0-202203151517.jpg",
   "category":"Vegetables",
+  "amount":1,
   },
   
   
@@ -154,6 +167,7 @@ const Products=[
   "price":33,
   "image":"https://www.jiomart.com/images/product/600x600/590003538/cabbage-per-pc-approx-600-g-1000-g-product-images-o590003538-p590003538-0-202203170436.jpg",
   "category":"Vegetables",
+  "amount":1,
   },
   
   {
@@ -167,6 +181,7 @@ const Products=[
   "discount":"43 %",
   "offer":"off",
   "category":"Vegetables",
+  "amount":1,
   },
   
   
@@ -177,6 +192,7 @@ const Products=[
   "price":10,
   "image":"https://www.jiomart.com/images/product/600x600/590004478/mint-leaves-per-bunch-approx-80-g-150-g-product-images-o590004478-p590004478-0-202203150316.jpg",
   "category":"Vegetables",
+  "amount":1,
   },
   
   
@@ -191,6 +207,7 @@ const Products=[
     "discount":"35 %",
     "offer":"off",
     "category":"Energy and Soft Drinks",
+    "amount":1,
   },
   
   
@@ -205,6 +222,7 @@ const Products=[
     "discount":"21 %",
     "offer":"off",
     "category":"Energy and Soft Drinks",
+    "amount":1,
   
   },
   
@@ -220,6 +238,7 @@ const Products=[
     "discount":"3 %",
     "offer":"off",
     "category":"Energy and Soft Drinks",
+    "amount":1,
   },
   
   
@@ -234,6 +253,7 @@ const Products=[
     "discount":"13 %",
     "offer":"off",
     "category":"Energy and Soft Drinks",
+    "amount":1,
   },
   
   
@@ -248,6 +268,7 @@ const Products=[
     "discount":"26 %",
     "offer":"off",
     "category":"Tea",
+    "amount":1,
   },
   
   {
@@ -261,6 +282,7 @@ const Products=[
     "discount":"18 %",
     "offer":"off",
     "category":"Tea",
+    "amount":1,
   
   },
   
@@ -275,6 +297,7 @@ const Products=[
     "discount":"15 %",
     "offer":"off",
     "category":"Tea",
+    "amount":1,
   
   },
   
@@ -289,6 +312,7 @@ const Products=[
     "discount":"7 %",
     "offer":"off",
     "category":"Tea",
+    "amount":1,
   
   },
   
@@ -303,6 +327,7 @@ const Products=[
     "discount":"20 %",
     "offer":"off",
     "category":"Fruit juice",
+    "amount":1,
   
   },
   
@@ -318,6 +343,7 @@ const Products=[
     "discount":"50 %",
     "offer":"off",
     "category":"Fruit juice",
+    "amount":1,
   
   },
   
@@ -333,6 +359,7 @@ const Products=[
     "discount":"50 %",
     "offer":"off",
     "category":"Fruit juice",
+    "amount":1,
   
   },
   
@@ -348,6 +375,7 @@ const Products=[
     "discount":"51 %",
     "offer":"off",
     "category":"Fruit juice",
+    "amount":1,
   },
   
   {
@@ -361,6 +389,7 @@ const Products=[
     "discount":"17 %",
     "offer":"off",
     "category":"Atta , Flours & Sooji",
+    "amount":1,
   
   },
   
@@ -375,6 +404,7 @@ const Products=[
     "discount":"20 %",
     "offer":"off",
     "category":"Atta , Flours & Sooji",
+    "amount":1,
   
   },
   
@@ -390,6 +420,7 @@ const Products=[
     "discount":"16 %",
     "offer":"off",
     "category":"Atta , Flours & Sooji",
+    "amount":1,
   
   },
   
@@ -405,6 +436,7 @@ const Products=[
     "discount":"58 %",
     "offer":"off",
     "category":"Atta , Flours & Sooji",
+    "amount":1,
   
   },
   
@@ -420,6 +452,7 @@ const Products=[
     "discount":"37 %",
     "offer":"off",
     "category":"Pulses",
+    "amount":1,
   
   },
   
@@ -436,6 +469,7 @@ const Products=[
     "discount":"13 %",
     "offer":"off",
     "category":"Pulses",
+    "amount":1,
   
   },
   
@@ -451,6 +485,7 @@ const Products=[
     "discount":"18 %",
     "offer":"off",
     "category":"Pulses",
+    "amount":1,
   
   },
   
@@ -465,6 +500,7 @@ const Products=[
     "discount":"5 %",
     "offer":"off",
     "category":"Pulses",
+    "amount":1,
   
   },
   {
@@ -478,7 +514,7 @@ const Products=[
     "discount":"14 %",
     "offer":"off",
     "category":"Edible Oils",
-  
+    "amount":1,
   },
   
   
@@ -493,6 +529,7 @@ const Products=[
     "discount":"22 %",
     "offer":"off",
     "category":"Edible Oils",
+    "amount":1,
   
   },
   
@@ -508,6 +545,7 @@ const Products=[
     "discount":"31 %",
     "offer":"off",
     "category":"Edible Oils",
+    "amount":1,
   },
   
   
@@ -522,6 +560,7 @@ const Products=[
     "discount":"28 %",
     "offer":"off",
     "category":"Edible Oils",
+    "amount":1,
   
   },
   
@@ -536,6 +575,7 @@ const Products=[
     "discount":"3 %",
     "offer":"off",
     "category":"Dairy",
+    "amount":1,
   
   },
   
@@ -550,6 +590,7 @@ const Products=[
     "discount":"4 %",
     "offer":"off",
     "category":"Dairy",
+    "amount":1,
   
   },
   
@@ -564,6 +605,7 @@ const Products=[
     "discount":"35 %",
     "offer":"off",
     "category":"Dairy",
+    "amount":1,
   
   },
   
@@ -579,6 +621,7 @@ const Products=[
     "discount":"25 %",
     "offer":"off",
     "category":"Dairy",
+    "amount":1,
   
   },
   
@@ -593,6 +636,7 @@ const Products=[
     "discount":"12 %",
     "offer":"off",
     "category":"Ghee",
+    "amount":1,
   
   },
   
@@ -607,6 +651,7 @@ const Products=[
     "discount":"7 %",
     "offer":"off",
     "category":"Ghee",
+    "amount":1,
   
   },
   
@@ -618,6 +663,7 @@ const Products=[
     "price":310,
     "image":"https://www.jiomart.com/images/product/600x600/491249531/patanjali-cow-ghee-500-ml-carton-product-images-o491249531-p491249531-0-202203152254.jpg",
     "category":"Ghee",
+    "amount":1,
   },
   
   {
@@ -631,6 +677,7 @@ const Products=[
     "discount":"6 %",
     "offer":"off",
     "category":"Ghee",
+    "amount":1,
   
   },
   
@@ -645,7 +692,7 @@ const Products=[
     "discount":"50 %",
     "offer":"off",
     "category":"Hair Care",
-  
+    "amount":1,
   },
   
   
@@ -661,6 +708,7 @@ const Products=[
     "discount":"44 %",
     "offer":"off",
     "category":"Hair Care",
+    "amount":1,
   
   },
   
@@ -677,6 +725,7 @@ const Products=[
     "discount":"50 %",
     "offer":"off",
     "category":"Hair Care",
+    "amount":1,
   
   },
   
@@ -693,6 +742,7 @@ const Products=[
     "discount":"7 %",
     "offer":"off",
     "category":"Hair Care",
+    "amount":1,
   
   },
   
@@ -708,6 +758,7 @@ const Products=[
     "discount":"30 %",
     "offer":"off",
     "category":"Oral Care",
+    "amount":1,
   
   },
   
@@ -722,6 +773,7 @@ const Products=[
     "discount":"33 %",
     "offer":"off",
     "category":"Oral Care",
+    "amount":1,
   
   },
   
@@ -738,6 +790,7 @@ const Products=[
     "discount":"20 %",
     "offer":"off",
     "category":"Oral Care",
+    "amount":1,
   
   },
   
@@ -754,6 +807,7 @@ const Products=[
     "discount":"50 %",
     "offer":"off",
     "category":"Oral Care",
+    "amount":1,
   
   },
   

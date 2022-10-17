@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 
 const Pr = ({ arr ,addToCart}) => {
@@ -34,7 +33,7 @@ const Pr = ({ arr ,addToCart}) => {
             </div>
 
             <div className="card-body " style={{ height: "160px" }}>
-              <h5 className="card-title">{value.title}</h5>
+              <h5 className="card-title"><b>{value.title}</b></h5>
               <p className="card-text">{value.description}</p>
               <p className="card-price">
                 <span>

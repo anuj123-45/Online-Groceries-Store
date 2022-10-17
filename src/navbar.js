@@ -20,13 +20,23 @@ const Nav = (props) => {
    <Container className="mt-2 ">
 
      <Row> 
-     <Col lg={4}  className="d-flex justify-content-start ">
+     <Col lg={4}  className="d-flex justify-content-end">
+      
+     <div>
+   <button type="button" className="btn btn-primary">
+   <a href='/gotohome' className="text-decoration-none text-dark">
+            Home
+          </a>
+        </button>
+   </div>
       <div>
       
      
  <a href="#" style={{textDecoration:'none'}} id="main-head" onClick={()=>props.handleShow(false)}><h3>Online Groceries Store</h3></a>
 
       </div>
+
+
       </Col>
 
  <Col lg={4} className="justify-content-center ">
@@ -46,30 +56,28 @@ const Nav = (props) => {
       </Col>
 
 <Col lg={4} className="d-flex justify-content-end">
-  <div>
-    
-  
-      <div className="d-flex gap-3">
-       <div>
-<button  onClick={()=>props.handleShow(true)}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i><sup>{props.count}</sup>
-</button>
-       </div>
-   
-       <div>
-   <button type="button" className="btn btn-primary">
-   <a href='/' className="text-decoration-none text-dark">
-            Home
-          </a>
-        </button>
-   </div>
 
+  <div>
+ 
+   
+     <div className="d-flex gap-3">
+  
+       <div className="d-flex">
+<button  onClick={()=>props.handleShow(true)}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i>
+</button>
+<sup className="text-danger"><h3>{props.count}</h3></sup>
+       </div>
+     
+     
+      
        <div>
        <button type="button" className="btn btn-danger">
           <Link to='/grocery/signup' className="text-decoration-none text-dark">
-            Sign Up
+            SignUp
           </Link>
         </button>
        </div>
+   
    <div>
    <button type="button" className="btn btn-warning">
    <Link to="/grocery/login" className="text-decoration-none text-dark">
@@ -77,6 +85,15 @@ const Nav = (props) => {
           </Link>
         </button>
    </div>
+
+   <div>
+   <button type="button" className="btn btn-primary">
+   <a href='/' className="text-decoration-none text-dark">
+          Login as Admin
+          </a>
+        </button>
+   </div>
+
 
 
      </div>

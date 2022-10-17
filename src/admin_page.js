@@ -22,13 +22,10 @@ var y=document.forms['frms']['password'].value;
 	}
 
 	else {
-		alert("Invalid");
+		alert("Invalid credentials");
 		e.preventDefault();
 	}
 }
-
-
-
 
     return(
        <>

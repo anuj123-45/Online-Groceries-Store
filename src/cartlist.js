@@ -1,5 +1,4 @@
 import React,  {useState,useEffect}from 'react';
-import innerText from 'react-innertext';
 
 
 
@@ -63,7 +62,12 @@ localStorage.setItem("Prod",JSON.stringify(cart));
             }
             </b>
         </p>
-    
+    <div style={{textAlign:'center'}}>
+       <a href="https://accounts.google.com/v3/signin/identifier?dsh=S671300573%3A1665990437140704&continue=https%3A%2F%2Fpay.google.com%2Fpayments%2Fhome%23&followup=https%3A%2F%2Fpay.google.com%2Fpayments%2Fhome&osid=1&passive=1209600&service=billing&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWrovNN0g3qY_K4l3eBCe30MfOvxlZYczZzihgDpjoGZ5SVhIzWhbEC3CNPVe7UodJBB1Idg"> <button class="btn btn-success">Pay: Rs {
+              CART.map(item=>item.price*item.quantity).reduce((total,value) => total+value,0)
+        }</button></a>
+        
+    </div>
 </div>
 
     );

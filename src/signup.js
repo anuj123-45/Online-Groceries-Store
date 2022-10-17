@@ -34,7 +34,7 @@ const Signup=()=>{
     return(
         
      <>
-     <Link to="/"><button className="btn btn-primary">Home</button></Link>
+     <Link to="/gotohome"><button className="btn btn-primary">Home</button></Link>
 <div className="signup-form">
     <form action="#" method="post">
 		<div className="form-header">

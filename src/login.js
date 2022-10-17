@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Login=()=>{
 return(
     <>
-    <Link to="/"><button className="btn btn-primary">Home</button></Link>
+    <Link to="/gotohome"><button className="btn btn-primary">Home</button></Link>
 <div className="login-form">
     <form action="/examples/actions/confirmation.php" method="post">
         <h2 className="text-center">Login In</h2>   

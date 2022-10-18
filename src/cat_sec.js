@@ -4,6 +4,7 @@ import Pr from './product';
 import Nav from './navbar';
 import Hero from './hero_sec';
 import CartList from './cartlist';
+import  Footer  from './footer';
 
 const s=new Set();
 const Cat=()=>{
@@ -93,6 +94,9 @@ const handleChange = (item, d) => {
 <Hero filterResult={filterResult}></Hero>
 
     <Pr arr={Result}  addToCart={addToCart}></Pr>
+    <br/>
+    <Footer/> 
+  
 </div>
 
  

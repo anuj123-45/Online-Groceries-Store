@@ -28,6 +28,9 @@ const Signup=()=>{
             alert("Passwrd Not Matched");
             event.preventDefault();
         }
+        else {
+            alert("Account Created");
+        }
     }
 
 

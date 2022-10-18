@@ -53,7 +53,10 @@ const CartList=({cart, setCart, handleChange})=>{
           <span>Rs - {price}</span>
         </div>
         <div className='d-flex justify-content-center'>
-  <Link to="/goto/payment/paymentgateway">  <button type="button" className='btn btn-success'>Pay&ensp;₹{price}</button></Link>
+  <Link to='/checkout'>  <button type="button" className='btn btn-success'>Checkout</button></Link>
+  {
+    localStorage.setItem("TotalCost",price)
+  }
         </div>
       </article>
 

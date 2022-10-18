@@ -9,6 +9,7 @@ import CartList from './cartlist';
 import Admin from './admin_page';
 import Cat from './cat_sec';
 import Payment from './payment';
+import FormValidation from './checkout';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
 <Route  path='/grocery/login' element={<Login/>}/>
 <Route  path='/cartlist' element={<CartList/>}/>
 <Route  path='/goto/payment/paymentgateway' element={<Payment/>}/>
+<Route  path='/checkout' element={<FormValidation/>}/>
 </Routes>
     </BrowserRouter>
 

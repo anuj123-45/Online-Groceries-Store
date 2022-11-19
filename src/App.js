@@ -17,7 +17,7 @@ export default function App() {
 <BrowserRouter>
 <Routes>
 <Route  exact path='/gotohome' element={<Ren/>}/>
-<Route  path='/mainpage' element={<Cat/>}/>
+<Route  path='/' element={<Cat/>}/>
 <Route  path='/mainpage/home' element={<Cat/>}/>
 <Route  path='/grocery/signup' element={<Signup/>}/>
 <Route  path='/grocery/login' element={<Login/>}/>

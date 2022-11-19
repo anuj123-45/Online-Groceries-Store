@@ -62,11 +62,11 @@ const Nav = (props) => {
    
      <div className="d-flex gap-3">
   
-       <div className="d-flex">
-<button  onClick={()=>props.handleShow(true)}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i>
+     <div className="d-flex">
+<button  onClick={()=>props.handleShow(true)}  style = {{height:13}}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i>
 </button>
 <sup className="text-danger"><h4 style={{fontWeight:'bolder'}}>{props.count}</h4></sup>
-       </div>
+      </div> 
      
      
       

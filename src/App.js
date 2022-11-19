@@ -6,7 +6,6 @@ import Ren from './render';
 import Signup from './signup';
 import Login from './login';
 import CartList from './cartlist';
-import Admin from './admin_page';
 import Cat from './cat_sec';
 import Payment from './payment';
 import FormValidation from './checkout';

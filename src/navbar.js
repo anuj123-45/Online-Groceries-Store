@@ -86,16 +86,6 @@ const Nav = (props) => {
         </button>
    </div>
 
-   <div>
-   <button type="button" className="btn btn-secondary">
-   <a href='/' className="text-decoration-none text-dark">
-          Login as Admin
-          </a>
-        </button>
-   </div>
-
-
-
      </div>
      </div>
       </Col>

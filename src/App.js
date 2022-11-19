@@ -16,7 +16,6 @@ export default function App() {
 
 <BrowserRouter>
 <Routes>
-<Route  path='/' element={<Admin/>}/>
 <Route  exact path='/gotohome' element={<Ren/>}/>
 <Route  path='/mainpage' element={<Cat/>}/>
 <Route  path='/mainpage/home' element={<Cat/>}/>

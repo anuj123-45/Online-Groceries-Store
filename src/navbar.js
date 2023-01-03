@@ -6,21 +6,29 @@ import Col from 'react-bootstrap/Col';
 import './App.css';
 import {Link}  from 'react-router-dom';
 import React, {useState} from 'react';
+import { useAuth0 } from "@auth0/auth0-react";
 
+import {
+   
+  useNavigate
+} 
+
+from "react-router-dom";
 
 
 
 const Nav = (props) => {
 
+  const { loginWithRedirect , logout, isAuthenticated , user} = useAuth0();
 
-
+  const navigate = useNavigate();
   return (
 <>
 
    <Container className="mt-2 ">
 
      <Row> 
-     <Col lg={4}  className="d-flex justify-content-end">
+     <Col lg={4}  className="d-flex justify-content-between">
       
      <div>
    <button type="button" className="btn btn-primary">
@@ -55,7 +63,7 @@ const Nav = (props) => {
         </div>
       </Col>
 
-<Col lg={4} className="d-flex justify-content-end">
+<Col lg={4} className="d-flex justify-content-end align-items-center">
 
   <div>
  
@@ -63,28 +71,39 @@ const Nav = (props) => {
      <div className="d-flex gap-3">
   
      <div className="d-flex">
-<button  onClick={()=>props.handleShow(true)}  style = {{height:13}}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i>
-</button>
-<sup className="text-danger"><h4 style={{fontWeight:'bolder'}}>{props.count}</h4></sup>
+
+{
+  props.count>0 ? <><button onClick={() => props.handleShow(true)} style={{ height: 13 }}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                    </button><sup className="text-danger"><h4 style={{ fontWeight: 'bolder' }}>{props.count}</h4></sup></>
+  :
+  <button    style = {{height:13}}> <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i>
+  </button>
+}
       </div> 
+
+      {
+        isAuthenticated && 
+          <><p className="mt-2" ><b>Hi , {user.name}</b></p></>
+        
+       
+      }
      
+      {
+        isAuthenticated ?       <div>
+        <button type="button" className="btn btn-danger">
+           <Link  className="text-decoration-none text-dark" onClick={() => logout({ returnTo: window.location.origin })}>
+             Logout
+           </Link>
+         </button>
+        </div>
+   :   
+navigate("/")
+      }
+    
      
       
-       <div>
-       <button type="button" className="btn btn-danger">
-          <Link to='/grocery/signup' className="text-decoration-none text-dark">
-            SignUp
-          </Link>
-        </button>
-       </div>
-   
-   <div>
-   <button type="button" className="btn btn-warning">
-   <Link to="/grocery/login" className="text-decoration-none text-dark">
-            Login
-          </Link>
-        </button>
-   </div>
+ 
+
 
      </div>
      </div>

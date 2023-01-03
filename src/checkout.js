@@ -33,7 +33,7 @@ export default function FormValidation() {
       handler: function () {
         if (confirm("Payment Done")) {
           alert("Visit Again");
-        navigate("/");
+        navigate("/home");
         }
       },
       prefill: {

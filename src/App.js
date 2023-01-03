@@ -9,13 +9,15 @@ import CartList from './cartlist';
 import Cat from './cat_sec';
 import Payment from './payment';
 import FormValidation from './checkout';
+import First from './first';
 
 export default function App() {
   return (
 
 <BrowserRouter>
 <Routes>
-<Route  exact path='/' element={<Cat/>}/>
+<Route  exact path='/' element={<First/>}/>
+<Route  exact path='/home' element={<Cat/>}/>
 <Route  exact path='/gotohome' element={<Ren/>}/>
 
 <Route  path='/mainpage/home' element={<Cat/>}/>
